@@ -17,5 +17,5 @@ RUN apt-get -y update && \
 # Copy Build Thumbnail script to Docker image and add execute permissions
 ADD ./build-thumbnails.py /app/build-thumbnails.py
 
-RUN chmod +x build-thumbnails.py
+RUN chmod +x /app/build-thumbnails.py
   
